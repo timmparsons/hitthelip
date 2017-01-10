@@ -1,6 +1,12 @@
+
 body {
-	height:100%;
-	background-image: url('http://www.georgekarbusphotography.com/wp-content/uploads/2015/08/fergal_smith_surfing_black_and_white.jpg')
+height: 100%;
+}
+
+.welcome_bg {
+	background-image: url('http://www.georgekarbusphotography.com/wp-content/uploads/2015/08/fergal_smith_surfing_black_and_white.jpg');
+	height: 650px;
+	background-size: cover;
 }
 
 p {
@@ -22,5 +28,6 @@ p {
 #button {
 	padding-left: 45%;
 	padding-top: 300px;
+	padding-bottom: auto;
 	text-transform: uppercase;
 }
