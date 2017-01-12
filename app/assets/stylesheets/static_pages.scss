@@ -3,9 +3,6 @@ nav {
 	
 }
 
-.list-inline {
-	padding-top: 10px;
-}
 
 nav ul { 
 		list-style: none;
@@ -33,18 +30,28 @@ nav li {
 nav img {
 	width: 50px;
 }
-h1 {
-color:white;
+
+.form_box {
+	padding-top: 25px;
+}
+
+	h1 {
+	color:white;
 	margin-top: 0;
 	padding-top:5px;
 	padding-left: 30px;
 }
 
-footer {
-	height: 150px;
+.footer {	
 	background-color: black;
+	height: 50px;
+	width: 100%;
 	bottom: 0;
 	position: fixed;
+}
+
+.footer p {
+	color: white;
 }
 
 .carousel {
