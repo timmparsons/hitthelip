@@ -1,6 +1,7 @@
 body {
 margin: 0;
 height: 100%;
+
 }
 
 nav {
@@ -64,7 +65,9 @@ h1 {
 .footer {	
 	background-color: black;
 	height: 50px;
+	bottom: 0;
 	width: 100%;
+	clear: both;
 }
 
 .footer p {
