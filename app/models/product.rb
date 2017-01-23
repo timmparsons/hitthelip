@@ -1,5 +1,6 @@
 class Product < ApplicationRecord
 	has_many :comments
+	has_many :orders
 	validates :name, presence: true
 	validates :body, presence: true
 		validates :user, presence: true
