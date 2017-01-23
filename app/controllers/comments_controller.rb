@@ -4,9 +4,15 @@ class CommentsController < ApplicationController
 		@product = Product.find(params[:product_id])
 		@comment = @product.comments.new(comment_params)
 		@comment.user = current_user
-		@comment.save
-		redirect_to product_path(@product)
+		if @comment.save
+			format.html { redirect_to @product, notice: "Review was created successfully."}
+			format.json { render :show, status: :created, location: @producct }
+		else
+			format.html {rediret_to @product, alert: "Review was not saved successfully."}
+			format.json { rendr json: @comment.errors, status: :unprocessable_entity }
+		end
 	end
+end
 
 	def destroy 
 	end

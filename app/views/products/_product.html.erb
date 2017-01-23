@@ -4,6 +4,7 @@
         <p><%= product.description %></p>
         <p><%= product.colour %></p>
         <p><%= product.price %></p>
+        <%= will_paginate @posts %>
         <h6><%= link_to 'Show', product %></h6>
         <h6><%= link_to 'Edit', edit_product_path(product) %></h6>
         <h6><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></h6>
