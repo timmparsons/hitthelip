@@ -28,4 +28,4 @@ class CommentsController < ApplicationController
 			params.require(:comment).permit(:user_id, :body, :rating)
 		end
 
-	end
+end
