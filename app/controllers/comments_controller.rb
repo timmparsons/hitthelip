@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
 		@comment.user = current_user
 		if @comment.save
 			format.html { redirect_to @product, notice: "Review was created successfully."}
-			format.json { render :show, status: :created, location: @producct }
+			format.json { render :show, status: :created, location: @product }
 		else
 			format.html {rediret_to @product, alert: "Review was not saved successfully."}
 			format.json { rendr json: @comment.errors, status: :unprocessable_entity }
