@@ -1,7 +1,6 @@
 body {
-margin: 0;
-height: 100%;
-
+	margin: 0;
+	height: 100%;
 }
 
 nav {
@@ -14,8 +13,8 @@ nav {
 }
 
 nav ul { 
-		list-style: none;
-		float: right;		
+	list-style: none;
+	float: right;		
 }
 nav ul a {
 	padding-top: 10px;
@@ -65,9 +64,8 @@ h1 {
 .footer {	
 	background-color: black;
 	height: 50px;
-	bottom: 0;
+	bottom-margin: 0;
 	width: 100%;
-	clear: both;
 }
 
 .footer p {
